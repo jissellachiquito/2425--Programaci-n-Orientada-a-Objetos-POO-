@@ -16,7 +16,7 @@ def limpiar_lista():
 
 # configuración de la ventana principal
 root = tk.Tk()
-root.title("Aplicación GUI Básica ")
+root.title("Aplicación Básica sobre GUI")
 root.geometry("500x500")
 root.configure(bg="lightgreen")
 
