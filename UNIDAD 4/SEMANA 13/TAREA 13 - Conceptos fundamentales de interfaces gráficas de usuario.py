@@ -40,4 +40,4 @@ boton_limpiar_lista.pack(pady=5)
 # ejecutar la aplicación
 root.mainloop()
 
-
+root.quit()  # Detiene el loop de Tkinter
