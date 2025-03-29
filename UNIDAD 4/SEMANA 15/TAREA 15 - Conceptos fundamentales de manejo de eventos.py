@@ -33,12 +33,12 @@ def eliminar_tarea():
 def manejar_enter(event):
     añadir_tarea()
 
-# Configuración de la ventana principal
+# configuración de la ventana principal
 ventana = tk.Tk()
 ventana.title("Lista de Tareas", )
 ventana.geometry("350x350")
 
-# Campo de entrada para escribir nuevas tareas
+# campo de entrada para escribir nuevas tareas
 entrada = tk.Entry(ventana, width=30)
 entrada.grid(row=0, column=0, padx=10, pady=10, )
 # Vincula la tecla "Enter" a la función manejar_enter
@@ -52,18 +52,18 @@ boton_añadir.grid(row=0, column=1, padx=10, pady=10, )
 boton_completada = tk.Button(ventana, text="Marcar como Completada", command=marcar_completada)
 boton_completada.grid(row=1, column=0, padx=10, pady=10)
 
-# Botón para eliminar una tarea
+# botón para eliminar una tarea
 boton_eliminar = tk.Button(ventana, text="Eliminar Tarea", command=eliminar_tarea)
 boton_eliminar.grid(row=1, column=1, padx=10, pady=10)
 
-# Listbox para mostrar las tareas actuales
+# listbox para mostrar las tareas actuales
 lista_tareas = tk.Listbox(ventana, width=50, height=10)
 lista_tareas.grid(row=2, column=0, columnspan=2, padx=10, pady=10)
 
-# Vincular atajos de teclado
+# vincular atajos de teclado
 ventana.bind("<a>", lambda event: añadir_tarea())  # Ctrl + A para añadir tarea
 ventana.bind("<m>", lambda event: marcar_completada())  # Ctrl + M para marcar como completada
 ventana.bind("<d>", lambda event: eliminar_tarea())  # Ctrl + D para eliminar tarea
 
-# Ejecutar la aplicación
+# ejecutar la aplicación
 ventana.mainloop()
