@@ -60,13 +60,13 @@ lista_tareas = tk.Listbox(ventana, font=("Georgia", 12), width=40, height=10)
 lista_tareas.pack(pady=10)
 
 #atajos de teclado
-ventana.bind('<Return>', agregar_tarea)       # Enter para agregar tarea
-ventana.bind('<c>', completar_tarea)          # C para completar
-ventana.bind('<C>', completar_tarea)          # C mayúscula también
-ventana.bind('<d>', eliminar_tarea)           # D para eliminar
-ventana.bind('<D>', eliminar_tarea)           # D mayúscula también
-ventana.bind('<Delete>', eliminar_tarea)      # Tecla Delete para eliminar
-ventana.bind('<Escape>', cerrar_aplicacion)   # Escape para cerrar la app
+ventana.bind('<Return>', agregar_tarea)       #Enter para agregar tarea
+ventana.bind('<c>', completar_tarea)          #C para completar
+ventana.bind('<C>', completar_tarea)          #C mayúscula también
+ventana.bind('<d>', eliminar_tarea)           #D para eliminar
+ventana.bind('<D>', eliminar_tarea)           #D mayúscula también
+ventana.bind('<Delete>', eliminar_tarea)      #Tecla Delete para eliminar
+ventana.bind('<Escape>', cerrar_aplicacion)   #Escape para cerrar la app
 
 #iniciar bucle de la aplicación
 ventana.mainloop()
